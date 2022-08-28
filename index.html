@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	 <center>
+	   <!-- Di Buat Oleh; ARDA STORE -->
+	 	<title>Bot Nulis - ARDA-STORE</title>	
+			  	 <meta name="description" content="Selam Sejahtera">
+  <meta property="og:title" content="Arda Saha" />
+  <meta property="og:description" content="Web Arda Saha">
+  <meta property="og:image" content="https://telegra.ph/file/f391e6879a8aaf14c0ed4.jpg">
+  <link rel="shortcut icon" href="https://telegra.ph/file/f391e6879a8aaf14c0ed4.jpg" type="image/x-icon" />
+
+<audio hidden autoplay loop>
+    <source src="https://g.top4top.io/m_2431rxn1r1.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio
+  </audio>
+
+	<div class="tile">
+		<!-- Hasil Gambar Akan Muncul Di Sini -->
+		<div class="tile-body" id="hasil">
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<div class="tile">
+		<div class="tile-body">
+			<br>
+			<textarea id='nama' class="form-control" placeholder="Masukan nama kamu !" required=true></textarea>
+			<br>
+			<textarea id='kelas' class="form-control" placeholder="Masukan kelas !" required=true></textarea>
+			<br>
+			<textarea id='nomor' class="form-control" placeholder="Masukan nomor absen !" required=true></textarea>
+			<br>
+			<textarea id='teks' class="form-control" placeholder="Masukan Text Yang Ingin Di Tulis !" rows="12" required=true></textarea>
+		</div>
+	</div>
+	<div class="tile">
+		<div class="row">
+		</div>
+		<div class="col">
+			<input type='button' onclick="buat()" value="TULIS" id='button' class="btn btn-danger btn-block">
+		</div>
+	</div>
+                    
+	<script>
+		function buat() {
+			var jeneng = encodeURIComponent(document.getElementById("nama").value);
+			var kelase = encodeURIComponent(document.getElementById("kelas").value);
+			var nomore = encodeURIComponent(document.getElementById("nomor").value);
+			var isi = encodeURIComponent(document.getElementById("teks").value);
+			document.querySelector('#hasil').innerHTML = `<img style='max-width: 450px;max-height: 450px;' src='https://fdz-app.herokuapp.com/api/Fmake/nulis?nama=${jeneng}&kelas=${kelase}&no=${nomore}&text=${isi}' alt="hasil.png"></img>`;
+		}
+
+<!-- src='https://ferdiz-afk.my.id/api/Fmake/nulis?nama=${jeneng}&no=${nomore}&kelas=${kelase}&text=${isi}' -->
+		
+<!-- ambil aja link api nya kalau mau gumain tapi ingat request nya jangan spam ya-->
+		
+	      </script>
+          </div>
+          </div>
+          </body>
+          </html>
